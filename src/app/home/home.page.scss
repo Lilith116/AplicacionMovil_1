@@ -1,0 +1,24 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 180px;
+}
+
+ion-button {
+  margin-top: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+ion-content {
+  background-color: #f5f5f5;
+}
+
+
+#container a {
+  text-decoration: none;
+}
