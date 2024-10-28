@@ -2,19 +2,18 @@
   <ion-toolbar>
     <ion-title>Ingreso Alumno </ion-title>
   </ion-toolbar>
-  <ion-content>
-    <!-- boton return mal implementado -->
-    <ion-button (click)="navigateToHome()">Volver a Inicio</ion-button>
-  </ion-content>
+
 </ion-header>
 
+<ion-content class="ion-padding">
 
+  <ion-button expand="block" (click)="navigateToHome()" class="volver-boton">
+    Volver a Inicio
+  </ion-button>
 
-<ion-content class="ion-padding"></ion-content>
   <div class="logo-container">
     <img src="assets/RegistrAPP.png" alt="RegistrAPP logo" class="logo">
   </div>
-<ion-content class="ion-padding">
   <div class="logo-container">
     <img src="assets/duoc-logo.png" alt="Duoc UC Logo" class="logo">
   </div>
@@ -22,7 +21,7 @@
   <ion-card>
     <ion-card-content>
       <ion-item>
-        <ion-label position="floating">Nombre</ion-label>
+        <ion-label position="floating">Email</ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
 

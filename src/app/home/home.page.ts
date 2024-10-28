@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { FirestoreService } from '../services/firestore.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private firestore:FirestoreService) {}
 
   navigateToCCAlumno() {
     this.router.navigate(['/ccalumno']);
@@ -21,6 +22,11 @@ export class HomePage {
   navigateToIDocente(){
     this.router.navigate(['/idocente']);
   }
+  
+  getestudiantes(){
+    this.firestore.getCollection()
+  }
+
   
 
   

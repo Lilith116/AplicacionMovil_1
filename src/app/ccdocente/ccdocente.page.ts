@@ -16,4 +16,9 @@ export class CCDocentePage implements OnInit {
     this.router.navigate(['/home']);
   }
 
+  navigateToRContrasenna(){
+    this.router.navigate(['/rcontrasenna']);
+  }
+
+
 }
